@@ -1,6 +1,6 @@
 // src/components/Navbar.jsx
 import React, { useState } from "react";
-import { NavLink, Link } from "react-router-dom";
+import { Link , NavLink} from "react-router-dom";
 import { AiOutlineMenuUnfold, AiOutlineVerticalLeft } from "react-icons/ai";
 
 import "./Navbar.css";
@@ -52,7 +52,7 @@ const Navbar = () => {
                         className="h-[50px] w-[170px]"
                     />
                 </Link>
-                <NavLink>
+                <div>
                     <div className="nav font-semibold lg:flex lg:flex-1 lg:gap-x-5 lg:items-center hidden">
                         <Nav />
                     </div>
@@ -66,7 +66,7 @@ const Navbar = () => {
                             <AiOutlineMenuUnfold />
                         )}
                     </button>
-                </NavLink>
+                </div>
             </div>
             <div
                 className={`fixed top-20 right-0 h-full w-full bg-white/50 backdrop-blur ${
